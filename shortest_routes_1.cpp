@@ -8,7 +8,7 @@ int main(){
     cin>> n >> m; //input
 
     vector<vector<pii>> adj(n+1); //graph (since cities start at 1 I need n+1)
-    adj.resize(n+1); //VERY IMPORTANT resize
+    // adj.resize(n+1); is not necessary because the size was set to n+1 in the previous line
 
     for(int i=0; i<m; i++){ //i<m and not n because I am reading edges
         int A, B, C; //a=from b=to c=weight
